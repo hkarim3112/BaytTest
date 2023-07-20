@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Site</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      function toggleMobileMenu() {
+        let element = document.getElementById("toggle_nav");
+        if (element.style.display == "none") {
+          element.style.display = "flex";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="sticky desktop_nav">
+        <div class="nav_items">
+          <a href="#" class="logo nav_item"><i class="fa fa-home"></i> Logo</a>
+          <a href="#team" class="nav_item">Team</a>
+          <a href="#work" class="nav_item">Work</a>
+          <a href="#footer" class="nav_item">Contact</a>
+          <select class="nav_item">
+            <option value="Option1">Option1</option>
+            <option value="Option2">Option2</option>
+            <option value="Option3">Option3</option>
+            <option value="Option4">Option4</option>
+          </select>
+        </div>
+        <i class="fa fa-search nav_search_icon" style="margin-right: 20px"></i>
+      </nav>
+
+      <nav class="sticky mobile_nav">
+        <div class="mobile_nav_items">
+          <a href="#" class="logo nav_item"><i class="fa fa-home"></i> Logo</a>
+          <div class="mobile_menu_icon" onclick="toggleMobileMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+
+        <div id="toggle_nav" class="mobile_sub_nav" style="display: none">
+          <i
+            class="fa fa-search nav_search_icon nav_item"
+            style="margin-right: 20px"
+          ></i>
+          <a href="#team" class="nav_item">Team</a>
+          <a href="#work" class="nav_item">Work</a>
+          <a href="#footer" class="nav_item">Contact</a>
+          <select class="nav_item">
+            <option value="Option1">Option1</option>
+            <option value="Option2">Option2</option>
+            <option value="Option3">Option3</option>
+            <option value="Option4">Option4</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="index" class="landing_image">
+        <div class="landing_text">Talentera</div>
+      </div>
+
+      <div id="team" class="team_section">
+        <div class="team_section_head">
+          <h2>OUR TEAM</h2>
+          <p>Meet the team - our office rats:</p>
+        </div>
+        <div class="team_members_section">
+          <div class="team_member">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+              alt="prfile image"
+              class="profile_image"
+            />
+            <h3 class="team_member_name">Mr. Bean</h3>
+            <p class="team_member_position">Web Developer</p>
+          </div>
+          <div class="team_member">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+              alt="prfile image"
+              class="profile_image"
+            />
+            <h3 class="team_member_name">Mr. Bean</h3>
+            <p class="team_member_position">Web Developer</p>
+          </div>
+          <div class="team_member">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+              alt="prfile image"
+              class="profile_image"
+            />
+            <h3 class="team_member_name">Mr. Bean</h3>
+            <p class="team_member_position">Web Developer</p>
+          </div>
+          <div class="team_member">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+              alt="prfile image"
+              class="profile_image"
+            />
+            <h3 class="team_member_name">Mr. Bean</h3>
+            <p class="team_member_position">Web Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="work" class="work_section">
+        <div class="wording_section_heading">
+          <h2>Our Work</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            vero iste accusamus, corrupti ratione qui natus laboriosam illum,
+            unde quidem, deserunt explicabo libero sapiente aut rerum iusto
+            temporibus similique perferendis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Pariatur vero iste accusamus, corrupti
+            ratione qui natus laboriosam illum, unde quidem, deserunt explicabo
+            libero sapiente aut rerum iusto temporibus similique perferendis.
+          </p>
+        </div>
+        <div class="work_section_customer">
+          <img
+            src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
+            alt="product Image"
+            class="customer_section_image"
+          />
+          <div class="customer_section_body">
+            <h3>Customer 1</h3>
+            <h4>Trade</h4>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+          </div>
+        </div>
+        <div class="work_section_customer">
+          <img
+            src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
+            alt="product Image"
+            class="customer_section_image"
+          />
+          <div class="customer_section_body">
+            <h3>Customer 1</h3>
+            <h4>Trade</h4>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+          </div>
+        </div>
+        <div class="work_section_customer">
+          <img
+            src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
+            alt="product Image"
+            class="customer_section_image"
+          />
+          <div class="customer_section_body">
+            <h3>Customer 1</h3>
+            <h4>Trade</h4>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+          </div>
+        </div>
+
+        <div class="plus_button">
+          <i class="fa fa-plus"></i>
+        </div>
+      </div>
+
+      <div id="footer" class="footer_section">
+        <div class="contact_details_section">
+          <h2 class="contact_title">Contact Us</h2>
+          <div>
+            <h2 class="contact_header">Address</h2>
+            <p>Swing by for a cup of coffee, or whatever.</p>
+            <p><i class="fa fa-map-marker contact_icon"></i>Amman, Jordan</p>
+            <p><i class="fa fa-phone contact_icon"></i>+962 79 0000000</p>
+            <p><i class="fa fa-envelope-o contact_icon"></i>test@test.com</p>
+          </div>
+        </div>
+        <div class="contact_form_section">
+          <div class="contact_form">
+            <div class="form_input_wrapper">
+              <label for="name">Name</label>
+              <input id="name" type="text" class="contact_form_input" />
+            </div>
+            <div class="form_input_wrapper">
+              <label for="email">Email</label>
+              <input id="email" type="email" class="contact_form_input" />
+            </div>
+            <div class="form_input_wrapper">
+              <label for="message">Message</label>
+              <input id="message" type="text" class="contact_form_input" />
+            </div>
+            <div class="contact_form_footer">
+              <div class="form_checkbox_wrapper">
+                <input id="like" type="checkbox" />
+                <label for="like">I Like it!</label>
+              </div>
+              <button class="contact_form_button">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social_links_section">
+        <p class="social_links_header">Follow Us</p>
+        <div class="social_links_wrapper">
+          <div class="social_icon_wraper">
+            <i class="fa fa-facebook-f"></i>
+          </div>
+          <div class="social_icon_wraper">
+            <i class="fa fa-twitter"></i>
+          </div>
+          <div class="social_icon_wraper">
+            <i class="fa fa-google-plus"></i>
+          </div>
+          <div class="social_icon_wraper">
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="social_icon_wraper">
+            <i class="fa fa-linkedin"></i>
+          </div>
+        </div>
+        <a href="#" class="goto_top_button">
+          <i class="fa fa-chevron-circle-up"></i>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
